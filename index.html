@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form Website Ginna</title>
+   <style>
+      body {
+         font-family: 'Poppins', sans-serif;
+         margin: 0;
+         padding: 0;
+         background: linear-gradient(120deg, #fbc2eb, #a6c1ee);
+      }
+
+      .topbar {
+         background: rgba(255, 255, 255, 0.2);
+         backdrop-filter: blur(8px);
+         color: white;
+         text-align: center;
+         padding: 20px;
+         border-bottom: 2px solid rgba(255,255,255,0.3);
+      }
+
+      .topbar h1 {
+         margin: 0;
+         font-size: 28px;
+      }
+
+      .social-links a {
+         text-decoration: none;
+         color: white;
+         margin: 0 10px;
+         font-weight: bold;
+         transition: 0.3s;
+      }
+
+      .social-links a:hover {
+         color: yellow;
+      }
+
+      .media-section {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 20px;
+         margin: 30px auto;
+         flex-wrap: wrap;
+      }
+
+      .media-section iframe {
+         width: 400px;
+         height: 225px;
+         border-radius: 15px;
+         box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      }
+
+      .media-section img {
+         width: 350px;
+         height: 225px;
+         object-fit: cover;
+         border-radius: 15px;
+         box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      }
+
+      .content {
+         width: 85%;
+         margin: 30px auto;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         gap: 25px;
+      }
+
+      .card {
+         background: white;
+         border-radius: 15px;
+         box-shadow: 0 0 15px rgba(0,0,0,0.2);
+         padding: 20px;
+      }
+
+      .card h2 {
+         color: #6a0dad;
+         border-bottom: 2px solid #ddd;
+         padding-bottom: 8px;
+      }
+
+      table {
+         width: 100%;
+         border-collapse: collapse;
+         margin-top: 10px;
+      }
+
+      th, td {
+         padding: 10px;
+         border: 1px solid #ddd;
+         text-align: center;
+      }
+
+      th {
+         background: #a18cd1;
+         color: white;
+      }
+
+      tr:nth-child(even) {
+         background: #f6f3ff;
+      }
+
+      form {
+         background: #fff;
+         padding: 20px;
+         border-radius: 15px;
+         margin: 20px auto;
+         width: 80%;
+         box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      }
+
+      fieldset {
+         border: 2px solid #a18cd1;
+         border-radius: 10px;
+         padding: 20px;
+      }
+
+      legend {
+         font-weight: bold;
+         color: #6a0dad;
+      }
+
+      label {
+         display: block;
+         margin-bottom: 8px;
+         font-weight: 500;
+      }
+
+      input, select {
+         width: 100%;
+         padding: 8px;
+         border: 1px solid #ccc;
+         border-radius: 8px;
+         margin-bottom: 15px;
+      }
+
+      .radio-group {
+         display: flex;
+         gap: 15px;
+         margin-bottom: 15px;
+      }
+
+      input[type="submit"], input[type="reset"] {
+         background: #6a0dad;
+         color: white;
+         border: none;
+         padding: 8px 16px;
+         border-radius: 8px;
+         cursor: pointer;
+         font-weight: bold;
+         transition: 0.3s;
+      }
+
+      input[type="submit"]:hover, input[type="reset"]:hover {
+         background: #a18cd1;
+      }
+
+      .bottom-bar {
+         text-align: center;
+         color: white;
+         padding: 15px;
+         background: rgba(0,0,0,0.3);
+         border-top: 2px solid rgba(255,255,255,0.3);
+      }
+
+      /* tombol tampilkan/sembunyikan */
+      .toggle-btn {
+         background: #6a0dad;
+         color: white;
+         padding: 10px 18px;
+         border: none;
+         border-radius: 10px;
+         font-weight: bold;
+         cursor: pointer;
+         margin: 10px auto;
+         display: block;
+         transition: 0.3s;
+         width: 80%;
+      }
+
+      .toggle-btn:hover {
+         background: #a18cd1;
+      }
+
+      .hidden-form {
+         display: none;
+      }
+   </style>
+</head>
+<body>
+
+   <div class="topbar">
+      <h1>Ginna's Space</h1>
+      <div class="social-links">
+         <a href="https://www.instagram.com/andiginna_/" style="color:pink;">Instagram</a>
+         <a href="https://wa.me/qr/J4WVKQXFJBA5I1" style="color:lightgreen;">WhatsApp</a>
+         <a href="https://www.youtube.com/c/LeotheWildlifeRanger" style="color:skyblue;">YouTube</a>
+      </div>
+   </div>
+
+   <div class="media-section">
+      <iframe src="D:\All Documents\Downloads\SELAMATKAN KURA-KURA RAKSASA _ Cangkang Kuat _ Leo Si Penjaga Alam _ Kartun Anak.mp4?autoplay=1" allowfullscreen allow="autoplay"></iframe>
+      <img src="https://raw.githubusercontent.com/andiginna/website-ginna/main/foto%20kura%20kura.jpg" alt="Foto Kura-Kura">
+   </div>
+
+   <div class="content">
+      <div class="card">
+         <h2>📅 Jadwal Harian Ginna</h2>
+         <table>
+            <tr>
+               <th>Pukul</th>
+               <th>Aktivitas</th>
+               <th>Catatan</th>
+            </tr>
+            <tr><td>06.00</td><td>Persiapan Pagi</td><td>Bangun, mandi, sarapan 🌞</td></tr>
+            <tr><td>08.00</td><td>Belajar / Sekolah</td><td>Fokus dan semangat 💪</td></tr>
+            <tr><td>12.00</td><td>Istirahat Siang</td><td>Makan siang 🍱</td></tr>
+            <tr><td>16.00</td><td>Waktu Bebas</td><td>Musik, jalan sore 🎵</td></tr>
+            <tr><td>20.00</td><td>Waktu Santai</td><td>Baca buku, nonton, game ✨</td></tr>
+         </table>
+      </div>
+
+      <div class="card">
+         <h2>💡 Aktivitas Favorit Ginna</h2>
+         <ul>
+            <li>Memasak makanan kesukaan 🍳</li>
+            <li>Belajar desain web dan coding 💻</li>
+            <li>Mendengarkan lagu santai 🎶</li>
+            <li>Menggambar dan membuat kerajinan 🎨</li>
+         </ul>
+
+         <h2>🧭 Cara Membuat Website Pribadi</h2>
+         <ol>
+            <li>Buka VS Code atau editor lain</li>
+            <li>Buat file <code>index.html</code></li>
+            <li>Tulis struktur HTML dasar</li>
+            <li>Tambahkan teks, gambar, dan tabel</li>
+            <li>Buka di browser untuk melihat hasil 🚀</li>
+         </ol>
+      </div>
+   </div>
+
+   <!-- BAGIAN FORM DENGAN TOMBOL SHOW/HIDE -->
+   <div class="form-container">
+
+      <button class="toggle-btn" onclick="toggleForm('loginForm')">🔐 Form Login</button>
+      <form id="loginForm" class="hidden-form" action="Latihan_form.php" method="post">
+         <fieldset>
+            <legend>Form Login</legend>
+            <label>Masukan User Name :</label>
+            <input type="text" name="username" placeholder="User Name Anda">
+
+            <label>Masukan Password :</label>
+            <input type="password" name="password" placeholder="Password Anda">
+
+            <label><input type="checkbox" name="remember" value="ingat"> Ingatkan Saya</label>
+            <input type="submit" value="Login">
+         </fieldset>
+      </form>
+
+      <button class="toggle-btn" onclick="toggleForm('callForm')">☎️ Call Center</button>
+      <form id="callForm" class="hidden-form" action="Latihan_form.php" method="post">
+         <fieldset>
+            <legend>Call Center</legend>
+            <label>Nama Anda :</label>
+            <input type="text" name="nama" placeholder="Ketik Nama Anda">
+
+            <label>Masukan Pesan Anda :</label>
+            <input type="text" name="subject" placeholder="Silahkan Masukan Pesan Anda">
+
+            <label>Email :</label>
+            <input type="email" name="email" placeholder="Masukan Email Anda">
+
+            <input type="submit" value="Kirim">
+            <input type="reset" value="Hapus">
+         </fieldset>
+      </form>
+
+      <button class="toggle-btn" onclick="toggleForm('regForm')">📝 Registrasi</button>
+      <form id="regForm" class="hidden-form" action="Latihan_form.php" method="post">
+         <fieldset>
+            <legend>Registrasi Anggota</legend>
+            <label>Nama Anda :</label>
+            <input type="text" name="nama" placeholder="Ketik Nama Anda">
+
+            <label>User Name :</label>
+            <input type="text" name="username" placeholder="User Name Anda">
+
+            <label>Email :</label>
+            <input type="email" name="email" placeholder="Masukan Email Anda">
+
+            <label>Password :</label>
+            <input type="password" name="password" placeholder="Masukan Password Anda">
+
+            <label>Jenis Kelamin :</label>
+            <div class="radio-group">
+               <label><input type="radio" name="sex" value="Laki-laki">Laki-laki</label>
+               <label><input type="radio" name="sex" value="Perempuan">Perempuan</label>
+            </div>
+
+            <label>Agama :</label>
+            <select name="agama">
+               <option value="islam">Islam</option>
+               <option value="kristen">Kristen</option>
+               <option value="katholik">Katholik</option>
+               <option value="hindu">Hindu</option>
+               <option value="budha">Budha</option>
+            </select>
+
+            <input type="submit" value="Kirim">
+            <input type="reset" value="Hapus">
+         </fieldset>
+      </form>
+
+      <button class="toggle-btn" onclick="toggleForm('urlForm')">🌐 Cek URL</button>
+      <form id="urlForm" class="hidden-form" action="Latihan_form.php" method="post">
+         <fieldset>
+            <legend>Date Cek URL</legend>
+            <label>URL Web :</label>
+            <input type="url" name="url" placeholder="Masukan Alamat Web">
+
+            <label>Tanggal Cek :</label>
+            <input type="date" name="tanggal">
+
+            <label>Jumlah Pengunjung :</label>
+            <input type="number" name="number" min="1" max="100">
+
+            <input type="submit" value="Kirim">
+            <input type="reset" value="Hapus">
+         </fieldset>
+      </form>
+   </div>
+
+   <div class="bottom-bar">
+      © 2025 by <b>Ginna</b>
+   </div>
+
+   <script>
+      function toggleForm(id) {
+         const form = document.getElementById(id);
+         form.style.display = (form.style.display === "block") ? "none" : "block";
+      }
+   </script>
+
+</body>
+</html>
